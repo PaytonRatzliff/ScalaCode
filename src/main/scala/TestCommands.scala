@@ -125,6 +125,6 @@ object TestCommands {
         recurseGames(goal+1, wins)
       }
     }
-    recurseGames(0, wins)
+    recurseGames(1, wins)
   }
 }
