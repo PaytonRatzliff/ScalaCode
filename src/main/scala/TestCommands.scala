@@ -11,8 +11,6 @@ object TestCommands {
   def flipNCoinsWithProbability(n: Int, prob: Double): Int = {
     if(prob < 0 || prob > 1) {
       throw new IllegalArgumentException("Please enter a probability between 0 and 1")
-    } else if (n > 1000000) {
-      throw new IllegalArgumentException("Capped at 1000000\n" + flipNCoinsWithProbability(1000000, prob))
     } else if (n < 1) {
       throw new IllegalArgumentException("Why would you flip less than one coin?")
     }
